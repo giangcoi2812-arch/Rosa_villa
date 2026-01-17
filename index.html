@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Villa Tam Dao - Golf & Resort</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Rosa Villa</a>
+            <nav class="nav">
+                <a href="#video">Video</a>
+                <a href="#experience">Trải nghiệm</a>
+                <a href="#amenities">Tiện ích</a>
+                <a href="#rooms">Phòng & Sức chứa</a>
+                <a href="#food">Ẩm thực</a>
+                <a href="#gallery">Thư viện</a>
+                <a href="#contact" class="btn-primary">Nhắn Zalo Ngay</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#video">Video</a>
+            <a href="#experience">Trải nghiệm</a>
+            <a href="#amenities">Tiện ích</a>
+            <a href="#rooms">Phòng</a>
+            <a href="#food">Ẩm thực</a>
+            <a href="#gallery">Thư viện</a>
+            <button class="close-menu"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 id="hero-title" class="animate-fade-up">Loading...</h1>
+            <p id="hero-subtitle" class="animate-fade-up delay-1">Loading...</p>
+            <div class="hero-badges" id="hero-badges"></div>
+            <div class="hero-actions animate-fade-up delay-2">
+                <a href="#" id="hero-btn-primary" class="btn-primary btn-lg"><i class="fas fa-comment-alt"></i> Tư vấn
+                    Zalo</a>
+                <a href="#gallery" class="btn-secondary btn-lg"><i class="fas fa-images"></i> Xem ảnh</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section">
+        <div class="container text-center">
+            <h2 class="section-title" id="video-title">Video Giới Thiệu</h2>
+            <p class="section-desc mb-4" id="video-desc">Khám phá không gian thực tế tại Rosa Villa</p>
+            <div class="video-container" id="video-wrapper">
+                <!-- JS Render -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-cream">
+        <div class="container text-center">
+            <h2 class="section-title">Trải Nghiệm Tại Rosa</h2>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h3>Họp Lớp & Team Building</h3>
+                    <p>Không gian rộng rãi, sân vườn nướng BBQ và tổ chức trò chơi tập thể cực vui.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="icon-box"><i class="fas fa-home"></i></div>
+                    <h3>Gia Đình Nghỉ Dưỡng</h3>
+                    <p>5 phòng ngủ riêng tư, bể bơi sạch sẽ, an toàn cho trẻ nhỏ và người lớn tuổi.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="icon-box"><i class="fas fa-glass-cheers"></i></div>
+                    <h3>Tiệc Tùng Riêng Tư</h3>
+                    <p>Thoải mái karaoke, tiệc tùng thâu đêm mà không sợ làm phiền người lạ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Attractions Section -->
+    <section id="nearby" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Khám Phá Xung Quanh</h2>
+            <p class="section-desc text-center">Ngoài không gian nghỉ dưỡng trong villa, bạn còn có thể trải nghiệm
+                những điểm đến hấp dẫn ngay gần đó</p>
+            <div class="nearby-grid" id="nearby-container">
+                <!-- JS Render -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section bg-cream">
+        <div class="container">
+            <h2 class="section-title text-center">Tiện Ích Cao Cấp</h2>
+            <div class="grid-amenities" id="amenities-container">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section bg-rose-light">
+        <div class="container split-layout">
+            <div class="text-content">
+                <h2 class="section-title">Phòng & Sức Chứa</h2>
+                <ul class="room-features">
+                    <li><i class="fas fa-check-circle"></i> <strong>5 Phòng ngủ</strong> Master khép kín</li>
+                    <li><i class="fas fa-check-circle"></i> Sức chứa tiêu chuẩn: <strong>12 người lớn + 8 trẻ
+                            em</strong></li>
+                    <li><i class="fas fa-check-circle"></i> Tối đa: <strong>25 khách</strong> (có phụ thu)</li>
+                    <li><i class="fas fa-info-circle"></i> Đoàn đông vui lòng liên hệ Zalo để chúng tôi sắp xếp đệm phụ.
+                    </li>
+                </ul>
+                <a href="#" class="btn-primary mt-4 nav-zalo">Liên hệ check lịch trống</a>
+            </div>
+            <div class="image-content">
+                <img src="assets/images/41.jpg" alt="Phòng ngủ Villa" class="rounded-img shadow-lg"
+                    id="room-img-placeholder">
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Ẩm Thực Tại Gia</h2>
+                <p class="section-desc">Không cần đi xa, tận hưởng tiệc nướng BBQ và lẩu ngay tại villa.</p>
+            </div>
+            <div class="food-grid" id="food-container">
+                <!-- JS Render -->
+            </div>
+            <div class="text-center mt-4">
+                <p class="note-text">* Thực đơn có thể thay đổi theo mùa và yêu cầu của đoàn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-cream">
+        <div class="container">
+            <h2 class="section-title text-center">Thư Viện Ảnh</h2>
+            <div class="gallery-grid" id="gallery-container">
+                <!-- JS Render -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Khách Hàng Nói Gì?</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Villa rất đẹp, sạch sẽ. Bể bơi view sân golf cực chill. Nhóm mình 15 người ở thoải mái."</p>
+                    <div class="author">- Chị Lan Anh (Hà Nội)</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Chủ nhà nhiệt tình, đồ ăn ngon. Vote 5 sao cho không gian BBQ buổi tối."</p>
+                    <div class="author">- Anh Minh (Công ty Tech)</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Phòng ốc rộng, thơm tho. Các bé nhà mình rất thích bể bơi ở đây."</p>
+                    <div class="author">- Gia đình bé Bông</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-rose-light">
+        <div class="container max-w-800">
+            <h2 class="section-title text-center">Câu Hỏi Thường Gặp</h2>
+            <div class="faq-list" id="faq-container">
+                <!-- JS Render -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Rosa Villa</h3>
+                <p>Nơi lưu giữ những khoảnh khắc tuyệt vời bên gia đình và bạn bè tại Tam Đảo.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <span id="footer-address">...</span></p>
+                <p><i class="fas fa-phone"></i> <span id="footer-phone">...</span></p>
+                <p><i class="fas fa-envelope"></i> <span id="footer-email">...</span></p>
+            </div>
+            <div class="footer-col">
+                <h3>Social</h3>
+                <div class="social-links">
+                    <a href="#" id="footer-fb" target="_blank"><i class="fab fa-facebook"></i> Fanpage</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rosa Villa Tam Dao. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal / Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="#" class="float-btn zalo-btn nav-zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <a href="#" class="float-btn call-btn nav-call">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
