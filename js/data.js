@@ -142,7 +142,7 @@ const CONFIG = {
         {
             icon: "baseball",
             title: "Sân Pickleball",
-            desc: "Gần villa có sân Pickleball hiện đại – môn thể thao đang hot, hội bạn đông đủ là quẩy ngay!"
+            desc: "Sân Pickleball cách villa chỉ vài phút lái xe – nơi bạn có thể cùng bạn bè tận hưởng trận đấu thú vị và khoảnh khắc gắn kết đáng nhớ."
         }
     ]
 };
