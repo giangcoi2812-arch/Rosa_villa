@@ -50,6 +50,11 @@ const CONFIG = {
         { src: "assets/images/23.jpg", alt: "Ảnh 23" },
         { src: "assets/images/24.jpg", alt: "Ảnh 24" },
         { src: "assets/images/25.jpg", alt: "Ảnh 25" },
+        { src: "assets/images/45.jpg", alt: "Ảnh 45" },
+        { src: "assets/images/46.jpg", alt: "Ảnh 46" },
+        { src: "assets/images/47.jpg", alt: "Ảnh 47" },
+        { src: "assets/images/48.jpg", alt: "Ảnh 48" },
+        { src: "assets/images/49.jpg", alt: "Ảnh 49" },
 
         // Video:
         {
