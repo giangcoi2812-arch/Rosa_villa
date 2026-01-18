@@ -38,7 +38,6 @@ const CONFIG = {
         { src: "assets/images/6.jpg", alt: "Ảnh 6" },
         { src: "assets/images/7.jpg", alt: "Ảnh 7" },
         { src: "assets/images/8.jpg", alt: "Ảnh 8" },
-        { src: "assets/images/9.jpg", alt: "Ảnh 9" },
         { src: "assets/images/10.jpg", alt: "Ảnh 10" },
         { src: "assets/images/11.jpg", alt: "Ảnh 11" },
         { src: "assets/images/12.jpg", alt: "Ảnh 12" },
