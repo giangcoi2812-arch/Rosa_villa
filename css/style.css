@@ -725,3 +725,298 @@ img {
         margin-bottom: 20px;
     }
 }
+
+/* ============================================
+   CTA IMPROVEMENTS - PHASE 1-5
+   ============================================ */
+
+/* URGENCY TEXT */
+.urgency-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 82, 82, 0.15);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 82, 82, 0.3);
+    animation: urgencyPulse 2s ease-in-out infinite;
+}
+
+@keyframes urgencyPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* TRUST BADGES */
+.trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.trust-badges span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* SECTION CTA BLOCKS */
+.section-cta {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #f8eded 100%);
+    border-radius: 20px;
+}
+
+.section-cta p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.section-cta .btn-primary {
+    font-size: 1rem;
+    padding: 14px 32px;
+}
+
+.section-cta .btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.section-cta .btn-outline:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+/* PULSE ANIMATION FOR PRIMARY CTA */
+.btn-primary.pulse-cta {
+    animation: ctaPulse 2s infinite;
+    position: relative;
+}
+
+@keyframes ctaPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+    }
+}
+
+/* HOT BADGE */
+.hot-badge {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 998;
+    box-shadow: 0 4px 15px rgba(238, 90, 36, 0.4);
+    animation: hotBadgePulse 2s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hot-badge::before {
+    content: '🔥';
+}
+
+@keyframes hotBadgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* MOBILE STICKY CTA BAR */
+.mobile-sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 15px;
+    background: #fff;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    gap: 10px;
+}
+
+.mobile-sticky-cta .btn-call,
+.mobile-sticky-cta .btn-zalo {
+    flex: 1;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mobile-sticky-cta .btn-call {
+    background: linear-gradient(135deg, #E14E4E 0%, #c0392b 100%);
+    color: #fff;
+}
+
+.mobile-sticky-cta .btn-zalo {
+    background: linear-gradient(135deg, #0068FF 0%, #0052cc 100%);
+    color: #fff;
+}
+
+/* FINAL CTA SECTION */
+.final-cta-section {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #b8960d 100%);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.final-cta-section h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.final-cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.final-cta-section .btn-white {
+    background: #fff;
+    color: var(--accent-color);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.final-cta-section .btn-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* REVIEWS SECTION SOCIAL PROOF */
+.reviews-social-proof {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-social-proof .stat-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.reviews-social-proof .stat-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-social-proof .stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+}
+
+.reviews-social-proof .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* MOBILE RESPONSIVE FOR NEW ELEMENTS */
+@media (max-width: 768px) {
+    .mobile-sticky-cta {
+        display: flex;
+    }
+
+    .floating-btns {
+        bottom: 90px;
+    }
+
+    .hot-badge {
+        top: auto;
+        bottom: 100px;
+        right: 10px;
+        font-size: 0.75rem;
+        padding: 8px 12px;
+    }
+
+    .trust-badges {
+        justify-content: center;
+    }
+
+    .trust-badges span {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    .section-cta {
+        padding: 20px 15px;
+    }
+
+    .final-cta-section {
+        padding: 40px 15px;
+    }
+
+    .final-cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .reviews-social-proof .stat-number {
+        font-size: 1.8rem;
+    }
+}

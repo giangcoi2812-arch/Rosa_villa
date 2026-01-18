@@ -56,13 +56,21 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content container">
+            <!-- Urgency Text -->
+            <p class="urgency-text animate-fade-up">⚡ Weekend đang hot – chỉ còn vài slot tháng này!</p>
             <h1 id="hero-title" class="animate-fade-up">Loading...</h1>
             <p id="hero-subtitle" class="animate-fade-up delay-1">Loading...</p>
             <div class="hero-badges" id="hero-badges"></div>
             <div class="hero-actions animate-fade-up delay-2">
-                <a href="#" id="hero-btn-primary" class="btn-primary btn-lg"><i class="fas fa-comment-alt"></i> Tư vấn
-                    Zalo</a>
-                <a href="#gallery" class="btn-secondary btn-lg"><i class="fas fa-images"></i> Xem ảnh</a>
+                <a href="#" id="hero-btn-primary" class="btn-primary btn-lg pulse-cta"><i
+                        class="fas fa-calendar-check"></i> Check Lịch Trống Ngay</a>
+                <a href="#gallery" class="btn-secondary btn-lg"><i class="fas fa-images"></i> Khám Phá Villa</a>
+            </div>
+            <!-- Trust Badges -->
+            <div class="trust-badges animate-fade-up delay-2">
+                <span>⭐ 4.9/5 đánh giá</span>
+                <span>👥 200+ đoàn đã đặt</span>
+                <span>✅ Phản hồi trong 5 phút</span>
             </div>
         </div>
     </section>
@@ -99,6 +107,11 @@
                     <p>Thoải mái karaoke, tiệc tùng thâu đêm mà không sợ làm phiền người lạ.</p>
                 </div>
             </div>
+            <!-- Section CTA -->
+            <div class="section-cta">
+                <p>🎉 Bạn đang lên kế hoạch cho nhóm?</p>
+                <a href="#" class="btn-primary nav-zalo">💬 Nhận tư vấn cá nhân hóa</a>
+            </div>
         </div>
     </section>
 
@@ -110,6 +123,11 @@
                 những điểm đến hấp dẫn ngay gần đó</p>
             <div class="nearby-grid" id="nearby-container">
                 <!-- JS Render -->
+            </div>
+            <!-- Section CTA -->
+            <div class="section-cta">
+                <a href="#" class="btn-outline" id="map-link"><i class="fas fa-map-marker-alt"></i> Xem vị trí trên bản
+                    đồ</a>
             </div>
         </div>
     </section>
@@ -176,6 +194,23 @@
     <section id="reviews" class="section">
         <div class="container">
             <h2 class="section-title text-center">Khách Hàng Nói Gì?</h2>
+            <!-- Social Proof Stats -->
+            <div class="reviews-social-proof">
+                <div class="stat-badges">
+                    <div class="stat-badge">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Đoàn khách đã đặt</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number">4.9/5</span>
+                        <span class="stat-label">Đánh giá trung bình</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Khách hài lòng</span>
+                    </div>
+                </div>
+            </div>
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
@@ -193,6 +228,11 @@
                     <div class="author">- Gia đình bé Bông</div>
                 </div>
             </div>
+            <!-- Section CTA -->
+            <div class="section-cta">
+                <p>🏆 Hơn 200 đoàn khách đã chọn Rosa Villa</p>
+                <a href="#" class="btn-primary pulse-cta nav-zalo">Đặt lịch ngay hôm nay</a>
+            </div>
         </div>
     </section>
 
@@ -203,6 +243,15 @@
             <div class="faq-list" id="faq-container">
                 <!-- JS Render -->
             </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>🏠 Sẵn sàng cho kỳ nghỉ đáng nhớ?</h2>
+            <p>Liên hệ ngay để nhận báo giá tốt nhất và giữ chỗ cho đoàn của bạn!</p>
+            <a href="#" class="btn-white nav-zalo"><i class="fas fa-calendar-check"></i> Đặt Villa Ngay</a>
         </div>
     </section>
 
@@ -245,6 +294,17 @@
         <a href="#" class="float-btn call-btn nav-call">
             <i class="fas fa-phone-alt"></i>
         </a>
+    </div>
+
+    <!-- Hot Badge (So nguoi dang xem) -->
+    <div class="hot-badge" id="hot-badge">
+        <span id="viewer-count">8</span> người đang xem villa này
+    </div>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="mobile-sticky-cta">
+        <a href="tel:0904337336" class="btn-call"><i class="fas fa-phone-alt"></i> Gọi ngay</a>
+        <a href="#" class="btn-zalo nav-zalo"><i class="fas fa-comment-dots"></i> Zalo</a>
     </div>
 
     <script src="js/data.js"></script>

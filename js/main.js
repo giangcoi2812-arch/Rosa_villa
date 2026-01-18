@@ -353,4 +353,24 @@ document.addEventListener('DOMContentLoaded', () => {
     renderGallery();
     renderFAQ();
     renderFooter();
+
+    // Update Map Link
+    const mapLink = document.getElementById('map-link');
+    if (mapLink && CONFIG.info.mapLink) {
+        mapLink.href = CONFIG.info.mapLink;
+        mapLink.target = '_blank';
+    }
+
+    // Random Viewer Count for Hot Badge (creates urgency)
+    const viewerCount = document.getElementById('viewer-count');
+    if (viewerCount) {
+        const randomCount = Math.floor(Math.random() * 8) + 5; // 5-12 người
+        viewerCount.textContent = randomCount;
+
+        // Update randomly every 30-60 seconds
+        setInterval(() => {
+            const newCount = Math.floor(Math.random() * 8) + 5;
+            viewerCount.textContent = newCount;
+        }, (30 + Math.random() * 30) * 1000);
+    }
 });
